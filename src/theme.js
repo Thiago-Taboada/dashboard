@@ -6,6 +6,8 @@ export const tokens = (mode) => ({
   ...(mode === "dark"
     ? {
         grey: {
+          10: "#e0e0e0",
+          30: "#a3a3a3",
           100: "#e0e0e0",
           200: "#c2c2c2",
           300: "#a3a3a3",
@@ -21,7 +23,7 @@ export const tokens = (mode) => ({
           200: "#a1a4ab",
           300: "#727681",
           400: "#1F2A40",
-          500: "#141b2d",
+          500: "#000f26", // wt padrao
           600: "#101624",
           700: "#0c101b",
           800: "#080b12",
@@ -37,6 +39,19 @@ export const tokens = (mode) => ({
           700: "#2e7c67",
           800: "#1e5245",
           900: "#0f2922",
+        },
+        cerulean: {
+          50: "#9CE1FF",
+          100: "#87DBFF",
+          200: "#5ECFFF",
+          300: "#36C3FF",
+          400: "#0DB6FF",
+          500: "#009FE3", // Default
+          600: "#0078AB",
+          700: "#005073",
+          800: "#00293B",
+          900: "#000203",
+          950: "#000000"
         },
         redAccent: {
           100: "#f8dcdb",
@@ -63,6 +78,8 @@ export const tokens = (mode) => ({
       }
     : {
         grey: {
+          10: "#e0e0e0",
+          30: "#a3a3a3",
           100: "#141414",
           200: "#292929",
           300: "#3d3d3d",
@@ -78,7 +95,7 @@ export const tokens = (mode) => ({
           200: "#080b12",
           300: "#0c101b",
           400: "#f2f0f0", // manually changed
-          500: "#141b2d",
+          500: "#000f26",
           600: "#1F2A40",
           700: "#727681",
           800: "#a1a4ab",
@@ -94,6 +111,19 @@ export const tokens = (mode) => ({
           700: "#94e2cd",
           800: "#b7ebde",
           900: "#dbf5ee",
+        },
+        cerulean: {
+          50: "#9CE1FF",
+          100: "#87DBFF",
+          200: "#5ECFFF",
+          300: "#36C3FF",
+          400: "#0DB6FF",
+          500: "#009FE3", // Default
+          600: "#0078AB",
+          700: "#005073",
+          800: "#00293B",
+          900: "#000203",
+          950: "#000000"
         },
         redAccent: {
           100: "#2c100f",
@@ -133,7 +163,7 @@ export const themeSettings = (mode) => {
               main: colors.primary[500],
             },
             secondary: {
-              main: colors.greenAccent[500],
+              main: colors.cerulean[500],
             },
             neutral: {
               dark: colors.grey[700],

@@ -24,7 +24,7 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
     <MenuItem
       active={selected === title}
       style={{
-        color: colors.grey[100],
+        color: colors.grey[10],
       }}
       onClick={() => setSelected(title)}
       icon={icon}
@@ -45,7 +45,7 @@ const Sidebar = () => {
     <Box
       sx={{
         "& .pro-sidebar-inner": {
-          background: `${colors.primary[400]} !important`,
+          background: `${colors.primary[500]} !important`,
         },
         "& .pro-icon-wrapper": {
           backgroundColor: "transparent !important",
@@ -103,13 +103,13 @@ const Sidebar = () => {
               <Box textAlign="center">
                 <Typography
                   variant="h2"
-                  color={colors.grey[100]}
+                  color={colors.grey[10]}
                   fontWeight="bold"
                   sx={{ m: "10px 0 0 0" }}
                 >
                   Cactus Bond
                 </Typography>
-                <Typography variant="h5" color={colors.greenAccent[500]}>
+                <Typography variant="h5" color={colors.cerulean[500]}>
                   Admin
                 </Typography>
               </Box>
@@ -127,7 +127,7 @@ const Sidebar = () => {
 
             <Typography
               variant="h6"
-              color={colors.grey[300]}
+              color={colors.grey[30]}
               sx={{ m: "15px 0 5px 20px" }}
             >
               Data
@@ -156,7 +156,7 @@ const Sidebar = () => {
 
             <Typography
               variant="h6"
-              color={colors.grey[300]}
+              color={colors.grey[30]}
               sx={{ m: "15px 0 5px 20px" }}
             >
               Pages
@@ -185,7 +185,7 @@ const Sidebar = () => {
 
             <Typography
               variant="h6"
-              color={colors.grey[300]}
+              color={colors.grey[30]}
               sx={{ m: "15px 0 5px 20px" }}
             >
               Charts
